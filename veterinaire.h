@@ -11,6 +11,8 @@ public:
    Veterinaire(int, std::string, std::string);
    ~Veterinaire();
    int get_id()const { return m_id;}
+   void ajouterMtricule(int);
+   int chercherMatcVeto(int);//verifier si lanimal est deja affecter au veto
 
 private:
    int m_id;

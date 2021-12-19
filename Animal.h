@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 
 class Animal
 {
@@ -11,6 +12,8 @@ public:
    Animal(int,std::string);
    virtual ~Animal();
    int get_matricul()const { return m_matricule; }
+   void ajouterDate(std::string);
+   std::vector<std::string>::iterator verifDate(std::string);
    //virtual void afficher();
 
 protected:
